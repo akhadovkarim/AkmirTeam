@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmir's Team</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body onload ="move()">
+
+    <div class="cursor"> </div>
+    <!-- Srcoll -->
+    <a href="#" class="scroll-top ">
+        <i class="bx bx-up-arrow-alt"></i>
+    </a>
+  
+    <div id="preloader1">
+        <div id="percent">1%</div>
+        <div id="bar">
+            <h1 class="loaderPortfolio">Portfolio <i class='bx bxs-briefcase'></i></h1>
+            <div id="barconfrm"></div>
+        </div>
+      </div>
+
+      <div class="container-loader">
+      </div>
+    <div id="particles-js"></div>
+    <header >
+        <!-- Animation -->
+
+        <div class="nav container">
+            <a href="home.html" class="logo">Akmir's Team</a>
+
+            <ul class="navbar">
+                <li><a data-page="home" href="home.html" class="nav-link">Home</a></li>
+                <li><a data-page="home" href="about.html" class="nav-link">About</a></li>
+                <li><a data-page="home" href="services.html" class="nav-link">Services</a></li>
+                <li><a data-page="home" href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a data-page="home" href="contact.html" class="nav-link">Contact</a></li>
+                <li><a data-page="home" href="agency.html" class="nav-link">Agency</a></li>
+                <!-- <li style="margin-left: 30px;"><a data-page="home" href="ruhome.html" class="nav-link" id="rus"> Rus   </a> </li>
+                <i class='bx bx-expand-horizontal' id="bxengeng"></i>
+                <li "><a data-page="home" href="home.html" class="nav-link" id="eng">Eng</a></li> -->
+
+                <!-- <li><a href="Ru.html" class="nav-link"></a>rus</li> -->
+            </ul>
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section data-index="0" class="home" id="home">
+        <div class="home-content">
+            <!-- <div class="home-img">
+                <img src="images/profili-removebg-preview.png" alt="">
+            </div> -->
+            <div class="home-text">
+                <h2>In work we dream,
+                    <br>
+                    <span class="color"> In dreams we work</span></h2>
+                    <br>
+                    <p><a href="#portfolio"  "> Scroll Down <i class='bx bx-down-arrow-alt'></i></a></p> 
+              
+                    <div class="social">
+                        <a href="https://www.instagram.com/akmirweb/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://t.me/AkmirWeb"><i class='bx bxl-telegram'></i></a>
+                        <a href="https://github.com/akhadovkarim"><i class='bx bxl-github'></i></a>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+
+  
+    <!-- Portfolio  -->
+    <section class="portfolio container" id="portfolio1">
+        <h2 class="heading">Portfol io</h2>
+        <a href="portfolio"></a>
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Web Development</h2>
+                    <a href="http://yasmintour.uz/">
+                        <i class='bx bx-link-alt' ></i>
+
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="images/portfolio2.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Web Desing</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Cuber Security</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio4.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Other's</h2>
+                    <a href="#">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+   
+
+    <!-- Client's -->
+
+    <!-- <section class="container reviwes" id="reviews">
+        <h2 class="heading">Reviews</h2>
+        <div class="reviews-content swiper">
+            <div class="swiper-slide">
+                <div class="review-box">
+                    <i class='bx bxs-quote-right' ></i>
+                    <p class="review-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque magni odio vitae nesciunt, eveniet quas optio blanditiis facilis illo. Animi porro incidunt culpa odit cupiditate debitis enim consequatur qui?
+
+                    </p>
+                    <div class="review-profile">
+                        <h2>Audrey Bella</h2>
+                        <span>From Finland</span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        </div>
+    </section> -->
+
+    <section class="contact container send-btn" id="contact">
+   
+       
+        
+          
+          
+          <!-- <input type="text" class="send-btn" style="background-color: #090a1a; padding: 0px 0px 0px 0px; margin: 0px; background-color:#090a1a;"> -->
+
+    </section>
+
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="mailto:akmirweb@gmail.com"><i class="bx bx-envelope"></i></a>
+            <a href="https://www.instagram.com/akmirweb/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://t.me/AkmirWeb"><i class='bx bxl-telegram'></i></a>
+            <a href="https://github.com/akhadovkarim"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of User</a>
+            <a href="#">Disclaimer</a>
+        </div>
+
+
+        <!-- Copyright -->
+
+        <p>&#169; Akmir Team</p>
+
+    </section>
+
+
+
+</div>
+
+
+    
+
+
+    <!-- Email js link -->
+
+
+<!-- sWEET -->
+
+
+
+<!-- Link Swiper Js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <script src="js/app.js"></script>
+
+    <!-- Animation js links -->
+    <script type="text/javascript " src="js/particles.js"></script>
+    <script type="text/javascript " src="js/app1.js"></script>
+
+
+    <script>
+        const tll = gsap.timeline({
+            paused: "true"
+        });
+        tll.to("#percent, #bar",{
+            duration:.2,
+            opacity: 0,
+            zIndex: -1
+        });
+        tll.to("#preloader1",{
+            duration: .8,
+            width: "0%"
+        });
+        tll.from(".container-loader",{
+            duration: 1.5,
+            y: "-150%"
+        },"-=.2");
+        tll.to(".container-loader h1",{
+            opacity:1,
+            textShadow: "12px 20px rgba(255,255,255,0.23)",
+            skewY: 10,
+            y: "10%",
+            stagger: {
+                amount: .4
+            }
+        });
+        var width = 1;
+        var bar = document.getElementById("barconfrm");
+        var id;
+        function move(){
+            id = setInterval(frame,10);
+
+        }
+        function frame(){
+            if(width>=100){
+                clearInterval(id);
+                tll.play();
+            }
+            else{
+                width++;
+                bar.style.width = width + "%";
+                document.getElementById("percent").innerHTML = width + "%";
+            }
+        }
+      </script>
+
+</body>
+</html>

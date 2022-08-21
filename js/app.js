@@ -19,15 +19,23 @@ window.onscroll = () => {
     let email = document.querySelector('.email');
     let msg = document.querySelector('.message');
     let sendBtn = document.querySelector('.send-btn');
+    
+    function ClearText() {
+        name.value = ''
+        email.value = ''
+        msg.value = ''
+    }
 
     sendBtn.addEventListener('click',(e) => {
       e.preventDefault();
 
-      if(name.value == "" || email.value == ""|| msg.value =="") {
+      if(name.value == "" || email.value == ""|| msg.value ==""   || email.value.length < 8 || msg.value.length < 10) {
         emptyerror();
+        ClearText();
       } else {
         sendmail(name.value,email.value,msg.value);
         success();
+        ClearText();
       }
     })
   }

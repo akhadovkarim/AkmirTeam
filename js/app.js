@@ -19,6 +19,12 @@ window.onscroll = () => {
     let email = document.querySelector('.email');
     let msg = document.querySelector('.message');
     let sendBtn = document.querySelector('.send-btn');
+    
+    function ClearText() {
+        name.value = ''
+        email.value = ''
+        msg.value = ''
+    }
 
     function ClearText() {
         name.value = ''

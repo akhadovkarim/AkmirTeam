@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmir's Team</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel='stylesheet'>
+    <!-- Swiper Css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                  <!-- Favicon's -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/208753a07d.js" crossorigin="anonymous"></script>
+</head>
+<body onload ="move()">
+
+    <div class="cursor" id="cursormedia"> </div>
+    <!-- Srcoll -->
+      <div id="preloader1">
+        <div id="percent">1%</div>
+        <div id="bar" >
+            <h1 class="loaderhome" id="homeloadermedia">  Akmir  <i class='bx bx-home' style="margin-left:10px"></i> </h1>
+            <div id="barconfrm"></div>
+        </div>
+      </div>
+      <div class="container-loader">
+    </div>
+    <div id="particles-js"></div>
+    <header >
+        <!-- Animation -->
+
+        <div class="nav container">
+            <a href="#home" class="logo">Акмир Теам</a>
+
+            <ul class="navbar">
+               <li><a data-page="home" href="../ru/home.html" class="nav-link">Домой</a></li>
+               <li><a data-page="home" href="../ru/about.html" class="nav-link">О нас</a></li>
+               <li><a data-page="home" href="../ru/services.html" class="nav-link">Сервисы</a></li>
+               <li><a data-page="home" href="../ru/portfolio.html" class="nav-link">Портфолио</a></li>
+               <li><a data-page="home" href="../ru/contact.html" class="nav-link">Контакты</a></li>
+               <li><a data-page="home" href="../ru/agency.html" class="nav-link">Агентство</a></li>
+               <i class='bx bx-moon change-theme theme nav-link' id="theme-button"></i>
+               <a href="../index.html" class="nav-link">Eng</a>  
+               <a href="./home.html" class="nav-link">Ru</a>  
+               
+                <!-- <a href=""><img src="images/translate.png"class="imgtraslate" alt=""></a>   -->
+             <!-- <li style="margin-left: 30px;"><a data-page="home" href="ruhome.html" class="nav-link" id="rus"> Rus   </a> </li>
+               <i class='bx bx-expand-horizontal' id="bxengeng"></i>
+               <li "><a data-page="home" href="home.html" class="nav-link" id="eng">Eng</a></li> -->
+            </ul>
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section data-index="0" class="home container " id="home">
+        <div class="home-content">
+            
+            <div class="home-img">
+                
+                <img src="../images/profili-removebg-preview.png" alt="">
+                
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/akmirweb/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://t.me/AkmirWeb"><i class='bx bxl-telegram'></i></a>
+                <a href="https://github.com/akhadovkarim"><i class='bx bxl-github'></i></a>
+            </div>
+            <!-- Test -->
+           
+            <div class="home-text">
+                <h3>Привет</h3>
+                <div class="animation-text">
+                    <div class="static-textru"><h2>Мы</h2></div>
+                    <ul class="dynamic-textsru">
+                        <li><span>АКМИРТЕАМ</span></li>
+                        <li><span>РАЗРАБОТЧИКИ</span></li>
+                        <li><span>ДИЗАЙНЕРЫ</span></li>
+                        <li><span>ИНЖЕНЕРЫ</span></li>
+                    </ul>
+                </div>
+                <p>
+                    Мы, компания <span class="color">Akmir</span>, страстно увлечены созданием <span class="color">веб-приложений </span> и <span class="color">кибербезопасности </ span> с отличным пользовательским интерфейсом.
+                        <br> Вот еще немного  <span class="color">о нас.</span>
+                       </p>
+                   
+            </div>
+        
+        </div>
+
+        
+
+    </section>
+
+    <section class="about container" id="about">
+        <h2 class="heading">МЫ</h2>
+
+        <div class="about-content">
+            <div class="about-data">
+                <span>О нас</span>
+                <h2>Веб-разработчик, <br>
+                    Кибербезопасность и веб-дизайнер</h2>
+                <a href="https://github.com/akhadovkarim" class="btn">
+                    О нас
+                    <i class='bx bx-download' ></i>
+                </a>
+            </div>
+            <div class="about-text">
+                <p>Здравствуйте! Мы команда Акмира. Веб-разработчики и веб-дизайнеры</p>
+                <p>Используя современные подходы к веб-разработке, мы объединяем интерфейс, серверную часть и архитектуру, чтобы удовлетворить потребности вашего бизнеса.</p>
+                <p>Получить книгу проектов с помощью кнопки контакта.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services container" id="services">
+        <h2 class="heading">Сервисы</h2>
+
+        <div class="services-content">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h2>Веб-разработка</h2>
+                <p>Процесс создания веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера. Проектирование сайта или веб-приложения (сбор и анализ требований, разработка технического задания, проектирование интерфейсов)
+                </p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-lock-alt' ></i>
+                <h2>Кибербезопасность</h2>
+                <p>Кибербезопасность (ее иногда называют компьютерной безопасностью) – это совокупность методов и практик защиты от атак злоумышленников для компьютеров, серверов, мобильных устройств, электронных систем, сетей и данных. Кибербезопасность находит применение в самых разных областях, от бизнес-сферы до мобильных технологий. </p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-brush' ></i>
+                <h2>Веб-дизайн</h2>
+                <p>В отличие от дизайнера одежды или интерьера, к работе веб-дизайнера нельзя физически прикоснуться, она существует исключительно в интернет-пространстве. И если дизайнер мебели должен уделять внимание тканям и материалам, из которых создается предмет, то веб-дизайнер думает о цветах, композиции и простоте использования сайта для пользователя.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio  -->
+    <section class="portfolio container" id="portfolio">
+        <h2 class="heading">Портфолио</h2>
+
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <img src="../images/portfolio1.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Веб Разработка</h2>
+                    <a href="http://yasmintour.uz/">
+                        <i class='bx bx-link-alt' ></i>
+
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="../images/portfolio2.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Веб Дизайн</h2>
+                    <a href="https://github.com/akhadovkarim">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="../images/portfolio3.jpg" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Кибер Безопасность</h2>
+                    <a href="#https://github.com/akhadovkarim">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="../images/portfolio4.png" alt="" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <h2>Другие</h2>
+                    <a href="#https://github.com/akhadovkarim">
+                        <i class='bx bx-link-alt' ></i>
+                        
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="projects container" id="projects">
+        <h2 class="heading">Проекты</h2>
+        <div class="project-content">
+            <div class="project-box">
+                <h2>10+</h2>
+                <span>Завершенные проекты</span>
+            </div>
+        <div class="project-cotent">
+            <div class="project-box">
+                <h2>50+</h2>
+                <span>Веб-сайты</span>
+            </div>
+        </div>
+        <div class="project-cotent">
+            <div class="project-box">
+                <h2>30+</h2>
+                <span>Довольные клиенты</span>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- Client's -->
+
+    <!-- <section class="container reviwes" id="reviews">
+        <h2 class="heading">Reviews</h2>
+        <div class="reviews-content swiper">
+            <div class="swiper-slide">
+                <div class="review-box">
+                    <i class='bx bxs-quote-right' ></i>
+                    <p class="review-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque magni odio vitae nesciunt, eveniet quas optio blanditiis facilis illo. Animi porro incidunt culpa odit cupiditate debitis enim consequatur qui?
+
+                    </p>
+                    <div class="review-profile">
+                        <h2>Audrey Bella</h2>
+                        <span>From Finland</span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        </div>
+    </section> -->
+
+    <section class="contact container" id="contact">
+        <h2 class="heading">Контакты</h2>
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Ваше имя.." class="text" required>
+            <input type="email" name="" placeholder="Емаил адрес..." class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Напишите сообщение тут... " class="message"></textarea>
+            <input type="submit" value="Отправить" class="send-btn">
+        </form>
+    </section>
+
+    <section class="footer container" id="footer">
+        <div class="social">
+            <a href="mailto:akmirweb@gmail.com"><i class="bx bx-envelope"></i></a>
+            <a href="https://www.instagram.com/akmirweb/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://t.me/AkmirWeb"><i class='bx bxl-telegram'></i></a>
+            <a href="https://github.com/akhadovkarim"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of User</a>
+            <a href="#">Disclaimer</a>
+        </div>
+
+
+        <!-- Copyright -->
+
+        <p>&#169; Akmir Team</p>
+
+    </section>
+
+
+
+
+
+
+    
+
+    <!-- Email js link -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("SlpqQ9UqEuzlIYRho");
+   })();
+</script>
+<!-- sWEET -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<!-- Link Swiper Js -->
+<script src="../js/swiper-bundle.min.js"></script>
+    
+    <script src="../js/app.js"></script>
+    <script type="text/javascript " src="../js/particles.js"></script>
+    <script type="text/javascript " src="../js/app1.js"></script>
+
+
+
+
+    <script>
+        const tll = gsap.timeline({
+            paused: "true"
+        });
+        tll.to("#percent, #bar",{
+            duration:.2,
+            opacity: 0,
+            zIndex: -1
+        });
+        tll.to("#preloader1",{
+            duration: .8,
+            width: "0%"
+        });
+        tll.from(".container-loader",{
+            duration: 1.5,
+            y: "-150%"
+        },"-=.2");
+        tll.to(".container-loader h1",{
+            opacity:1,
+            textShadow: "12px 20px rgba(255,255,255,0.23)",
+            skewY: 10,
+            y: "10%",
+            stagger: {
+                amount: .4
+            }
+        });
+        var width = 1;
+        var bar = document.getElementById("barconfrm");
+        var id;
+        function move(){
+            id = setInterval(frame,10);
+
+        }
+        function frame(){
+            if(width>=100){
+                clearInterval(id);
+                tll.play();
+            }
+            else{
+                width++;
+                bar.style.width = width + "%";
+                document.getElementById("percent").innerHTML = width + "%";
+            }
+        }
+      </script>
+
+</body>
+</html>

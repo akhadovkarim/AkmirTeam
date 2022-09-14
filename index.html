@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akmir's Team</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel='stylesheet'>
     <!-- Swiper Css -->
-    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                   <!-- Favicon's -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -17,6 +17,7 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/208753a07d.js" crossorigin="anonymous"></script>
 </head>
 <body onload ="move()">
 
@@ -39,13 +40,18 @@
             <a href="#home" class="logo">Akmir's Team</a>
 
             <ul class="navbar">
-               <li><a data-page="home" href="home.html" class="nav-link">Home</a></li>
+               <li><a data-page="home" href="index.html" class="nav-link">Home</a></li>
                <li><a data-page="home" href="about.html" class="nav-link">About</a></li>
                <li><a data-page="home" href="services.html" class="nav-link">Services</a></li>
                <li><a data-page="home" href="portfolio.html" class="nav-link">Portfolio</a></li>
                <li><a data-page="home" href="contact.html" class="nav-link">Contact</a></li>
                <li><a data-page="home" href="agency.html" class="nav-link">Agency</a></li>
-               <!-- <li style="margin-left: 30px;"><a data-page="home" href="ruhome.html" class="nav-link" id="rus"> Rus   </a> </li>
+               <i class='bx bx-moon change-theme theme nav-link' id="theme-button"></i>
+               <a href="index.html" class="nav-link">Eng</a>  
+               <a href="ru/home.html" class="nav-link">Ru</a>  
+               
+                <!-- <a href=""><img src="images/translate.png"class="imgtraslate" alt=""></a>   -->
+             <!-- <li style="margin-left: 30px;"><a data-page="home" href="ruhome.html" class="nav-link" id="rus"> Rus   </a> </li>
                <i class='bx bx-expand-horizontal' id="bxengeng"></i>
                <li "><a data-page="home" href="home.html" class="nav-link" id="eng">Eng</a></li> -->
             </ul>
@@ -70,12 +76,22 @@
                 <a href="https://t.me/AkmirWeb"><i class='bx bxl-telegram'></i></a>
                 <a href="https://github.com/akhadovkarim"><i class='bx bxl-github'></i></a>
             </div>
+            <!-- Test -->
+           
             <div class="home-text">
                 <h3>Hello</h3>
-                <h2>We're <span class="color">Akmir</span></h2>
+                <div class="animation-text">
+                    <div class="static-text"><h2>We're</h2></div>
+                    <ul class="dynamic-texts">
+                        <li><span data-text="AKMIRTEAM">AKMIRTEAM</h2></li>
+                        <li><span data-text="DEVELOPERS">DEVELOPERS</h2></li>
+                        <li><span data-text="DESIGNERS">DESIGNERS</h2></li>
+                        <li><span data-text="ENGINEERS">ENGINEERS</h2></li>
+                    </ul>
+                </div>
                 <p>
-                    We're <span class="color">CEO</span>  of this company with a strong passion for building <span class="color">web application </span> & <span class="color">Cyber Security </span>with great user experiences.
-                     <br> Here's a bit more about us. <span class="color">about us.</span>
+                    We're <span class="color">Akmir</span>  company with a strong passion for building <span class="color">web application </span> & <span class="color">Cyber Security </span>with great user experiences.
+                     <br> Here's a bit more  <span class="color">about us.</span>
                     </p>
                    
             </div>
@@ -86,7 +102,7 @@
 
     </section>
 
-    <section class="about container" id="about"">
+    <section class="about container" id="about">
         <h2 class="heading">About</h2>
 
         <div class="about-content">
@@ -114,17 +130,18 @@
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
                 <h2>Web Development</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est assumenda sunt reiciendis? Tempora, quam excepturi dolor, numquam earum similique explicabo repellendus magni et, officia voluptates. Repudiandae reprehenderit deleniti corrupti omnis.</p>
+                <p>The process of creating a website or web application. The main stages of the process are web design, page layout, client and server side programming, and web server configuration. Designing a website or web application (collection and analysis of requirements, development of technical specifications, interface design)
+                </p>
             </div>
             <div class="services-box">
                 <i class='bx bx-lock-alt' ></i>
-                <h2>Cyber Security</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est assumenda sunt reiciendis? Tempora, quam excepturi dolor, numquam earum similique explicabo repellendus magni et, officia voluptates. Repudiandae reprehenderit deleniti corrupti omnis.</p>
+                <h2>Cybersecurity</h2>
+                <p>Cybersecurity (sometimes referred to as computer security) is a set of techniques and practices for protecting computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. Cybersecurity finds application in a wide variety of areas, from business to mobile technology. </p>
             </div>
             <div class="services-box">
                 <i class='bx bx-brush' ></i>
-                <h2>Web Designing</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est assumenda sunt reiciendis? Tempora, quam excepturi dolor, numquam earum similique explicabo repellendus magni et, officia voluptates. Repudiandae reprehenderit deleniti corrupti omnis.</p>
+                <h2>Web design</h2>
+                <p>Unlike a fashion or interior designer, the work of a web designer cannot be physically touched, it exists exclusively on the Internet. And if a furniture designer must pay attention to the fabrics and materials from which an object is created, then a web designer thinks about colors, composition and ease of use of the site for the user.</p>
             </div>
         </div>
     </section>
@@ -230,7 +247,7 @@
         <h2 class="heading">Contact</h2>
         <form action="" class="contact-form" id="contact-form">
             <input type="text" placeholder="Your Name" class="text" required>
-            <input type="email" name="" id="" placeholder="Email adress..." class="email" required>
+            <input type="email" name="" placeholder="Email adress..." class="email" required>
             <textarea name="" id="" cols="30" rows="10" placeholder="Write message here... " class="message"></textarea>
             <input type="submit" value="send" class="send-btn">
         </form>
@@ -259,11 +276,10 @@
 
 
 
-</div>
+
 
 
     
-
 
     <!-- Email js link -->
     <script type="text/javascript"

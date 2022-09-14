@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Slab:wght@300;400;500;600;700&display=swap,family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');    
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Inline&family=Luckiest+Guy&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 * {
     font-family: 'Poppins', 'Ubuntu', sans-serif;
     margin: 0;
@@ -16,6 +18,8 @@
     --heading-color:#222231;
     --box-color:#0d0f26;
     --bg-color:#fff;
+    --loader-color:rgba(12, 20, 255, 0.207);
+    --navbar-color:#0d0f26;
 }
 
 body {
@@ -30,6 +34,120 @@ body {
    
     
 }
+body.dark-theme {
+    /* HSL color mode */
+    --main-color:#647bff;
+    --body-color: white;
+    --container-color: white;
+    --heading-color:black;
+    --box-color:#black;
+    --bg-color:black;
+    --loader-color:white;
+    --navbar-color:white;
+
+    
+}
+
+
+.animation-text {
+    display: inline-flex;
+}
+.static-text h2 {
+    font-family: 'Aclonica','Press Start 2P';
+
+}
+.animation-text .static-text {
+    font-family: 'Aclonica','Press Start 2P';
+
+    margin-top: 6.5px;
+    color: var(--btn-color);
+    font-size: 60px;
+    font-weight: 400;
+}
+.animation-text .dynamic-texts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-texts li {
+    color: var(--body-color);
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    -webkit-text-stroke: 0.1vw var(--body-color);
+    animation: slide 23s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -375px;
+    }
+}
+.dynamic-texts li span {
+    font-size: 60px;
+    font-family: 'Aclonica','Press Start 2P';
+   
+}
+.dynamic-texts li span::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #647bff;
+    overflow: hidden;
+    -webkit-text-stroke: 0vw #090a1a;
+    border-right: 2px solid #546eff;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    80%,90%{
+        width: 100%;
+    }
+    
+}
+
+
+/* Animation Ru */
+.animation-text .dynamic-textsru {
+    margin-left: 15px;
+    height: 90px;
+    font-family: 'Josefin Sans' ;
+    line-height: 90px;
+    overflow: hidden;
+}
+.animation-text .static-textru {
+    margin-top: 5px;
+     color: var(--btn-color);
+     font-size: 60px;
+     font-weight: 400;
+ }
+ .dynamic-textsru li {
+     margin-top: 3px;
+ 
+     color:var(--main-color);
+     font-family: 'Josefin Sans',  ;
+     list-style: none;
+     font-size: 45px;
+     font-weight: 500;
+     position: relative;
+     top: 0;
+     animation: slideru 7s steps(4) infinite;
+ }
+ @keyframes slideru {
+    100% {
+        top: -372px;
+    }
+}
+
 #particles-js {
     height:100%;
     position: absolute;
@@ -63,6 +181,7 @@ li{
 .contact-text a:hover {
     color:var(--main-color);
 }
+
 header{
    position: fixed;
    top:0;
@@ -99,6 +218,26 @@ header{
     border-radius: 3rem;
     color: var(--bg-color);
     /* background:var(--main-color); */
+}
+.theme {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px 4px;
+    margin-top: 5px;
+    border-radius: 3rem;
+    color: var(--bg-color);
+}
+.theme:hover{
+    color:var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all linear;
+}
+a.active{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 3rem;
+    color:var(--bg-color);
+    background: var(--main-color);
 }
 ul li a.active {
     font-size: 0.94rem;
@@ -857,7 +996,8 @@ html::-webkit-scrollbar-thumb{
         right: -100%;
         width: 300px;
         height: 100vh;
-        background:var(--box-color);
+        background:var(--navbar-color);
+        border:3px solid #222231;
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -900,14 +1040,121 @@ html::-webkit-scrollbar-thumb{
         margin-bottom: 1.3rem;
     }
     .project-content {
-        grid-template-columns: repeat(2, 200pxx);
+        grid-template-columns: repeat(2, 200px);
     }
 }
 
 
 @media screen and    (max-width:450px) {
 
+    .animation-text .static-text {
+        margin-top: 15.5px;
+        color: var(--btn-color);
+        font-size: 60px;
+        font-weight: 400;
+        
+    }
+    .animation-text .dynamic-texts {
+        margin-left: 15px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+    }
+    .dynamic-texts li {
+        color: transparent;
+        list-style: none;
+        font-size: 60px;
+        font-weight: 500;
+        top: 0;
+        position: relative;
+        -webkit-text-stroke: 0.3vw #090a1a;
+        animation: slide1 23s steps(4) infinite;
+    }
+    
+    @keyframes slide {
+        100% {
+            top: -200px;
+        }
+    }
+    .dynamic-texts li span {
+        font-size: 30px;
+        font-family: 'Aclonica','Press Start 2P';
+       
+    }
+    .dynamic-texts li span::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: #647bff;
+        overflow: hidden;
+        -webkit-text-stroke: 0vw #090a1a;
+        border-right: 2px solid #546eff;
+        animation: animate 6s linear infinite;
+    }
+    
+    @keyframes animate {
+        0%,10%,100%{
+            width: 0;
+        }
+        80%,90%{
+            width: 100%;
+        }
+        
+    }
 
+
+    .animation-text .static-textru {
+        margin-top: 15px;
+         color: var(--btn-color);
+         font-size: 50px;
+         font-weight: 400;
+     }
+     .dynamic-textsru li {
+         margin-top: 3px;
+     
+         color:var(--main-color);
+         font-family: 'Josefin Sans',  ;
+         list-style: none;
+         font-size: 25px;
+         font-weight: 500;
+         position: relative;
+         top: 0;
+         animation: slideru 7s steps(4) infinite;
+     }
+     .dynamic-textsru li span {
+         font-family: 'Bungee Inline','Press Start 2P' ;
+         position: relative;
+     }
+     .dynamic-textsru li span::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         background: transparent ;
+         border-left: 2px solid var(--btn-color);
+         animation: typing 1.5s steps(10) infinite;
+     }
+     
+     /* @keyframes slideru {
+         100% {
+             top: -372px;
+         }
+     } */
+
+    
+    @keyframes slide {
+        100% {
+            top: -200px;
+        }
+    }
+
+    
+
+    
     #cursormedia {
         width: 0rem;
         height: 0rem;
@@ -1182,7 +1429,7 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     width: 100%;
     height: 85vh;
-    background-color:rgba(12, 20, 255, 0.207);
+    background-color:var(--loader-color);
     
 }
 .container-loader h1{

@@ -31,10 +31,13 @@ body {
     padding: 0;
     color: var(--bg-color);
     background: var(--body-color);
+    transition: all 1s ;
+
    
     
 }
 body.dark-theme {
+    transition: all 1s ;
     /* HSL color mode */
     --main-color:#647bff;
     --body-color: white;
